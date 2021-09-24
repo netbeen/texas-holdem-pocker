@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 31
+    },
+    "auditLog": "/Users/bytedance/github/netbeen/texas-holdem-pocker/logs/my-midway-project/.1f3458c960f6b55d92322873439943d7afc4c517-audit.json",
+    "files": [
+        {
+            "date": 1632495698416,
+            "name": "/Users/bytedance/github/netbeen/texas-holdem-pocker/logs/my-midway-project/egg-schedule.log.2021-09-24",
+            "hash": "1145dade9009d4a35f291e0335c0993d"
+        }
+    ]
+}

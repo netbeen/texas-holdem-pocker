@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 31
+    },
+    "auditLog": "/Users/bytedance/github/netbeen/texas-holdem-pocker/logs/my-midway-project/.4366777a48acab7e7b2ddf2b5acc75de40b11d1f-audit.json",
+    "files": [
+        {
+            "date": 1632495698412,
+            "name": "/Users/bytedance/github/netbeen/texas-holdem-pocker/logs/my-midway-project/common-error.log.2021-09-24",
+            "hash": "d42ae5a7bac83739a8d80ee8db08abaa"
+        }
+    ]
+}
