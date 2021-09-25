@@ -1,30 +1,41 @@
-# my-midway-project
+## Getting Started
 
-## QuickStart
+Docs：[Midway Hooks - Getting Started](https://www.yuque.com/midwayjs/midway_v2/hooks_intro?translate=en)
 
-<!-- add docs here for user -->
+### Directory Structure
 
-see [midway docs][midway] for more detail.
+```
+.
+├── bootstrap.js //
+├── jest.config.js // Unit test file
+├── midway.config.ts // config file for setup directory and middleware
+├── src
+│   ├── apis // Backend directory
+│   │   ├── configuration.ts // Midway Hooks configuration
+│   │   └── lambda // Api directory(Can be modified in midway.config.ts)
+│   │       ├── index.test.ts // Api test file
+│   │       └── index.ts // Api file
+│   └── main.ts // Frontend framework file
+├── tsconfig.json
+└── vite.config.ts
+```
 
-### Development
+### Commands
+
+#### Start Dev Server
 
 ```bash
-$ npm i
 $ npm run dev
-$ open http://localhost:7001/
 ```
 
-### Deploy
+#### Build
 
 ```bash
-$ npm start
-$ npm stop
+$ npm run build
 ```
 
-### npm scripts
+### Running in production mode
 
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-
-
-[midway]: https://midwayjs.org
+```bash
+$ node bootstrap.js
+```

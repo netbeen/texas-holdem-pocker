@@ -1,7 +1,12 @@
-const WebFramework = require('@midwayjs/web').Framework;
-const web = new WebFramework().configure({
+const { Framework } = require('@midwayjs/koa');
+const { Bootstrap } = require('@midwayjs/bootstrap');
+
+const web = new Framework().configure({
   port: 7001,
 });
 
-const { Bootstrap } = require('@midwayjs/bootstrap');
-Bootstrap.load(web).run();
+Bootstrap.load(web)
+  .run()
+  .then(() => {
+    console.log('Your application is running at http://localhost:7001');
+  });

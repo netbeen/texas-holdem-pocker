@@ -1,24 +1,35 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "jsx": "react",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "inlineSourceMap":true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "stripInternal": true,
-    "skipLibCheck": false,
-    "pretty": true,
-    "declaration": true,
-    "typeRoots": [ "./typings", "./node_modules/@types"],
-    "outDir": "dist"
+    "types": [
+      "vite/client",
+      "jest"
+    ]
   },
-  "exclude": [
-    "dist",
-    "node_modules",
-    "test"
-  ]
+  "include": [
+    "./src"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
 }
